@@ -29,7 +29,7 @@ export const StudentRegistration = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("Hello from Submit button")
-        Axios.post('http://localhost:3005/api/newstudent', {
+        Axios.post(`${process.env.REACT_APP_API_URL}/api/newstudent`, {
             firstName: firstName,
             lastName: lastName,
             dateOfBirth: dateOfBirth,

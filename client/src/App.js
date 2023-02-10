@@ -9,11 +9,10 @@ import Header from './Components/Header'
 import Footer from './Components/Footer'
 import './App.css'
 
-
 const  App = () =>{
-//CHAT GPT create a function to toggle the Header component in ReactJS when there is a change on localstorage
   return (
     <Router>
+
       {/* {(localStorage.length == 1) && <Header/>} */}
       {window.location.pathname === "/" ? null : <Header/>}
       <Routes>

@@ -13,7 +13,7 @@ const MyCourses = ()=>{
     const [myCourses, setMyCourses] = useState(null)
     
     useEffect(() => {
-        Axios.get(`http://localhost:3005/api/student/${userName}`)
+        Axios.get(`${process.env.REACT_APP_API_URL}/api/student/${userName}`)
         .then((res) => {
             setStudentId(res.data[0]._id)
             console.log(res.data[0]._id)
@@ -21,7 +21,7 @@ const MyCourses = ()=>{
     }, [])
 
     useEffect(() => {
-        Axios.get(`http://localhost:3005/api/mycourses/details/${studentId}`)
+        Axios.get(`${process.env.REACT_APP_API_URL}/api/mycourses/details/${studentId}`)
         .then((res) => {
             setMyCourses(res.data)
             console.log(res.data)
@@ -32,7 +32,7 @@ const MyCourses = ()=>{
         console.log(studentId)
         console.log(courseId)
         if(window.confirm("Are you sure you want to delete this course?")) {
-            Axios.delete(`http://localhost:3005/api/delete/${courseId}/${studentId}`)
+            Axios.delete(`${process.env.REACT_APP_API_URL}/api/delete/${courseId}/${studentId}`)
             .then((res) => {
                 console.log(res)
             })
