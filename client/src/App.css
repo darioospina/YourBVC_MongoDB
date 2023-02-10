@@ -1,0 +1,120 @@
+.App {
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(79deg, #7439db,#c66fbc 48%,#f7944d);
+  
+  }
+  
+  .auth-form-container, .login-form, .register-form{
+    display: flex;
+    flex-direction: column;
+  
+  }
+    @media screen and (min-width: 600px){
+  
+      .auth-form-container{
+        padding: 5rem;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 0.5rem;
+      }
+    }
+  
+  
+  
+  label{
+    text-align: left;
+    padding: 0.25rem 0;  
+  
+  }
+  
+  input{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    
+  }
+  
+  button{
+    border: none;
+    background-color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFF;
+  
+  }
+  
+  .link-btn {
+    background: none;
+    color: black;
+    text-decoration: underline;
+  
+  }
+
+
+.profile{
+  margin: 2vh 2vw ;
+}
+.profileCard{
+  background-color: #FFF;
+    display: flex;
+    border: none;
+    margin: 2vw 0 0 2vw;
+    padding-left: 1vw;
+    justify-content: space-between;
+    /* background-color: pink; */
+}
+.myCoursesProfile{
+  width: 40vw;
+  margin-left: 5vh;
+  padding: 2vh;
+  /* box-shadow: 2px 5px 10px 2px rgb(235, 235, 235); */
+  
+
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.btn-profile{
+  
+  display: flex;
+  flex-direction: row;
+    justify-content:space-around;
+
+}
+.infoCourses{
+    margin: 2vh 0;
+    /* background-color: rgb(228, 176, 176); */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+}
+.cardBody{
+    margin-top: 1.5vh;
+    background-color: rgb(248, 248, 248);
+}
+.cardBody2{
+  margin-top: 1.5vh;
+  background-color: rgba(17, 73, 229, 0.603);
+  
+}
+.profileInfo{
+/* width: 40vw;
+height: 20vw;
+background-color: red; */
+}
+.btn-profile button{
+  background-color: rgb(237, 237, 237);
+}
+

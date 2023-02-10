@@ -1,0 +1,37 @@
+[
+    {
+        "studentId": 1001,
+        "Name": "Daniel",
+        "LastName":"Ospina",
+        "email":"daniel@gmail.com",
+        "password":123456,
+        "courses": ["Pr111","CompM1111", "IS1111"]
+    },     
+            
+    {
+        "studentId": 1002,
+        "Name": "Dario",
+        "LastName":"Ospina",
+        "email":"espectador@gmail.com",
+        "password":"sample",
+        "courses": ["Pr111", "C++111", "CompM1111", "IS1111"]
+    },
+           
+    {
+        "studentId": 1003,
+        "Name": "Abdulgafar",
+        "LastName":"sample",
+        "email":"abdul@gmail.com",
+        "password":123456,
+        "courses": ["C++111","CompM1111"]
+    },
+    {
+        "studentId": 1004,
+        "Name": "Sample",
+        "LastName":" Sample",
+        "email":"sample",
+        "password":"sample",
+        "courses": ["Pr111", "C++111", "CompM1111"]
+    }
+ 
+]

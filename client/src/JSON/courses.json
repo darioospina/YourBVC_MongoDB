@@ -1,0 +1,46 @@
+[
+    {   "courseId": "Pr111",
+        "courseDetails": 
+            {
+                "courseName": "Project management1",
+                "startDate": "January 10, 2023",
+                "endDate": "April 18, 2023",
+                "campus": "South Campus",
+                "tutor": "Peter Grifin",
+                "schedule": "Mon-Fri 9:00-11:00"
+            }
+    },    
+    {   "courseId": "C++111",
+        "courseDetails": 
+            {
+                "courseName": "C++ Programming Fundamentals",
+                "startDate": "January 10, 2023",
+                "endDate": "April 18, 2023",
+                "campus": "South Campus",
+                "tutor": "Peter Grifin",
+                "schedule": "Mon-Fri 9:00-11:00"
+            }
+    },      
+    {   "courseId": "CompM1111",
+        "courseDetails": 
+            {
+                "courseName": "Computer Maintenance",
+                "startDate": "January 10, 2023",
+                "endDate": "April 18, 2023",
+                "campus": "South Campus",
+                "tutor": "Peter Grifin",
+                "schedule": "Mon-Fri 9:00-11:00"
+            }
+    }, 
+    {   "courseId": "IS1111",
+        "courseDetails": 
+            {
+                "courseName": "Information Security1",
+                "startDate": "January 10, 2023",
+                "endDate": "April 18, 2023",
+                "campus": "South Campus",
+                "tutor": "Peter Grifin",
+                "schedule": "Mon-Fri 9:00-11:00"
+            }
+    }
+]
