@@ -28,7 +28,7 @@ mongoose
     .catch((err) => console.log(err))
   
 app.use(cors({
-    origin: '*'  
+    origin: ["http://localhost:3000", "https://mernapp-college.onrender.com"]  
 }));
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.json())
