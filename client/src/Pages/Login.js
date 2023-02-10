@@ -23,7 +23,7 @@ export const Login = () => {
     const handleSubmit = (e) =>{
         e.preventDefault();
         console.log(studentEmail)
-        Axios.post('http://localhost:3005/api/studentinfo', {
+        Axios.post(`${process.env.REACT_APP_API_URL}/api/studentinfo`, {
             Email: studentEmail,
             Password: password
         }).then((res) => {

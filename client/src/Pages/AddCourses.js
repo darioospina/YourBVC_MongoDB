@@ -11,7 +11,7 @@ const AddCourses = () => {
     const [coursesList, setCoursesList] = useState(null);
 
     useEffect(() => {
-        Axios.get(`http://localhost:3005/api/student/${userName}`)
+        Axios.get(`${process.env.REACT_APP_API_URL}/api/student/${userName}`)
         .then((res) => {
             setStudent(res.data[0])
             setStudentId(res.data[0]._id)
@@ -20,7 +20,7 @@ const AddCourses = () => {
     }, [])
 
     useEffect(() => {
-        Axios.get(`http://localhost:3005/api/courseslist/${studentId}`)
+        Axios.get(`${process.env.REACT_APP_API_URL}/api/courseslist/${studentId}`)
         .then((res) => {
             setCoursesList(res.data)
             console.log("Data" + res.data)
@@ -31,7 +31,7 @@ const AddCourses = () => {
 
     const handelAddCourse = (studentId, courseId)=>{
         console.log(studentId, courseId)
-        Axios.post("http://localhost:3005/api/addcourse", {
+        Axios.post(`${process.env.REACT_APP_API_URL}/api/addcourse`, {
             StudentId: studentId,
             CourseId: courseId
         }).then(

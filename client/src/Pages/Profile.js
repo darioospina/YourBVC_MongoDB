@@ -33,7 +33,7 @@ const Profile = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        Axios.get(`http://localhost:3005/api/student/${userName}`)
+        Axios.get(`${process.env.REACT_APP_API_URL}/api/student/${userName}`)
         .then((res) => {
             setStudent(res.data[0])
             console.log(res.data[0])
@@ -43,7 +43,7 @@ const Profile = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if(oldPassword == student.password) {
-            Axios.patch(`http://localhost:3005/api/updateprofile/${student._id}`, {
+            Axios.patch(`${process.env.REACT_APP_API_URL}/api/updateprofile/${student._id}`, {
                 email: email,
                 password: password
             }).then((res) => {
